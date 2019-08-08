@@ -34,19 +34,19 @@ public class ThuDao {
         return sqLiteDatabase.insert(TABLE_NAME, null, contentValues);
     }
 
-//    public long updateThu(String thu) {
-//        SQLiteDatabase sqLiteDatabase=thuRender.getWritableDatabase();
-//        ContentValues contentValues = new ContentValues();
-//        contentValues.put(COL_KHOANTHU, thu.KhoanThu);
-//        contentValues.put(COL_LOAITHU, thu.LoaiThu);
-//        contentValues.put(COL_NGAYTHU, thu.NgayThu);
-//        contentValues.put(COL_SOTIENTHU, thu.SoTienThu);
-//        return sqLiteDatabase.update(TABLE_NAME, contentValues, COL_KHOANTHU + "=?", new String[]{thu});
-//    }
+    public long updateThu(String thu) {
+        SQLiteDatabase sqLiteDatabase=thuRender.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL_KHOANTHU, thu.KhoanThu);
+        contentValues.put(COL_LOAITHU, thu.LoaiThu);
+        contentValues.put(COL_NGAYTHU, thu.NgayThu);
+        contentValues.put(COL_SOTIENTHU, thu.SoTienThu);
+        return sqLiteDatabase.update(TABLE_NAME, contentValues, COL_KHOANTHU + "=?", new String[]{thu.Khoanthu});
+    }
 
     public long deleteThu(String thu) {
         SQLiteDatabase sqLiteDatabase = thuRender.getWritableDatabase();
-        return sqLiteDatabase.delete(TABLE_NAME, COL_KHOANTHU + "=?", new String[]{thu});
+        return sqLiteDatabase.delete(TABLE_NAME, COL_KHOANTHU + "=?", new String[]{thu.Khoanthu});
     }
 
     public List<Thu> getAllThu() {
