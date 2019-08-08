@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GioiThieuActivity"></activity>
+        <activity android:name=".Screen.Sub2Activity"></activity>
+        <activity android:name=".Screen.SubActivity" />
+        <activity android:name=".GioiThieuActivity" />
         <activity android:name=".ThongKeActivity" />
         <activity android:name=".ChiActivity" />
         <activity android:name=".ThuActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Screen.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

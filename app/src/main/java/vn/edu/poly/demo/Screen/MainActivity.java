@@ -1,11 +1,10 @@
-package vn.edu.poly.demo;
+package vn.edu.poly.demo.Screen;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +16,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+
+import vn.edu.poly.demo.ChiActivity;
+import vn.edu.poly.demo.GioiThieuActivity;
+import vn.edu.poly.demo.R;
+import vn.edu.poly.demo.ThongKeActivity;
+import vn.edu.poly.demo.ThuActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -88,19 +93,19 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.khoanthu) {
-            Intent intent=new Intent(MainActivity.this,ThuActivity.class);
+            Intent intent=new Intent(MainActivity.this, SubActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.khoanchi) {
-            Intent intent=new Intent(MainActivity.this,ChiActivity.class);
+            Intent intent=new Intent(MainActivity.this, Sub2Activity.class);
             startActivity(intent);
 
         } else if (id == R.id.thongke) {
-            Intent intent=new Intent(MainActivity.this,ThongKeActivity.class);
+            Intent intent=new Intent(MainActivity.this, ThongKeActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.gioithieu) {
-            Intent intent=new Intent(MainActivity.this,GioiThieuActivity.class);
+            Intent intent=new Intent(MainActivity.this, GioiThieuActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.thoat) {

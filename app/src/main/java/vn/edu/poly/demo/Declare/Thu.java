@@ -1,15 +1,16 @@
 package vn.edu.poly.demo.Declare;
 
 public class Thu {
-    public String KhoanThu, NoiDungThu, NgayThu;
+    public String KhoanThu, LoaiThu, NgayThu;
     public double SoTienThu;
 
-    public Thu(String khoanThu, String noiDungThu, String ngayThu, double soTienThu) {
-        this.KhoanThu = khoanThu;
-        this.NoiDungThu = noiDungThu;
-        this.NgayThu = ngayThu;
-        this.SoTienThu = soTienThu;
-    }
+//    public Thu(String khoanThu, String noiDungThu, String ngayThu, double soTienThu) {
+//        this.KhoanThu = khoanThu;
+//        this.NoiDungThu = noiDungThu;
+//        this.NgayThu = ngayThu;
+//        this.SoTienThu = soTienThu;
+//    }
+
 
     public String getKhoanThu() {
         return KhoanThu;
@@ -20,11 +21,11 @@ public class Thu {
     }
 
     public String getNoiDungThu() {
-        return NoiDungThu;
+        return LoaiThu;
     }
 
     public void setNoiDungThu(String noiDungThu) {
-        NoiDungThu = noiDungThu;
+        LoaiThu = noiDungThu;
     }
 
     public String getNgayThu() {

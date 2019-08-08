@@ -4,12 +4,12 @@ public class Chi {
     public String KhoanChi, NoiDungChi, NgayChi;
     public double SoTienChi;
 
-    public Chi(String khoanChi, String noiDungChi, String ngayChi, double soTienChi) {
-        this.KhoanChi = khoanChi;
-        this.NoiDungChi = noiDungChi;
-        this.NgayChi = ngayChi;
-        this.SoTienChi = soTienChi;
-    }
+//    public Chi(String khoanChi, String noiDungChi, String ngayChi, double soTienChi) {
+//        this.KhoanChi = khoanChi;
+//        this.NoiDungChi = noiDungChi;
+//        this.NgayChi = ngayChi;
+//        this.SoTienChi = soTienChi;
+//    }
 
     public String getKhoanChi() {
         return KhoanChi;
