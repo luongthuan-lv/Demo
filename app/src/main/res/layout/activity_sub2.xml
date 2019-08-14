@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sc"
-    tools:context=".Screen.SubActivity">
+    tools:context=".screen.Sub2Activity">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
@@ -28,6 +28,7 @@
         app:layout_constraintVertical_bias="0.027">
 
         <TextView
+            android:onClick="Khoanchi"
             android:id="@+id/tvKhoanchi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,6 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView">
 
         <TextView
+            android:onClick="Loaichi"
             android:id="@+id/tvLoaichi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,6 +83,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
         <TextView
+            android:onClick="Ngaychi"
             android:id="@+id/tvNgaychi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -106,6 +109,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
         <TextView
+            android:onClick="Sotienchi"
             android:id="@+id/tvSotienchi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
